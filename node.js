@@ -1,0 +1,1 @@
+var x=70; console.log(x **(1/6));
