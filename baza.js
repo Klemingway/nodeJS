@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
 })
 
 
-var sql = "CREATE TABLE users(test int)"
+var sql = "CREATE TABLE IF NOT EXISTS users(test int)"
 connection.query(sql)
     
 connection.query("SHOW TABLES", function(err,rows){
